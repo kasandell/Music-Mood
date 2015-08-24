@@ -140,19 +140,7 @@ NSString *preferredGenre;
             return;
         }
     }];
-   // [self.trac]
-   /*
-    for(NSURL *url in self.spotifyIDList)
-    {
-        [self.trackPlayer queueURI:url callback:^(NSError *error) {
-            if(error)
-            {
-                NSLog(@"%@", error);
-                return;
-            }
-        }];
-    }
-    */
+
     [self.trackPlayer queueURIs:self.spotifyIDList clearQueue:YES callback:^(NSError *error) {
         if(error)
         {
@@ -167,17 +155,7 @@ NSString *preferredGenre;
             return;
         }
     }];
-       //[self.trackPlayer playT]
-    //[self.trackPlayer ]
-  /*  [self.trackPlayer playURIs:self.spotifyIDList fromIndex:0 callback:^(NSError *error){
-        if(error)
-        {
-            NSLog(@"%@", error);
-        }
-        
-        NSLog(@"LOL FUCK YOU SPOTIFY");
-        
-    }];*/
+
 
     
 }
